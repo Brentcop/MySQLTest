@@ -1,0 +1,43 @@
+-- select * from customers
+-- SELECT Country FROM Customers;
+
+-- SELECT * FROM Customers
+-- WHERE CustomerID like 'BL%';
+
+-- SELECT * from orders
+-- where orderID between 10248 and 10348;
+
+-- SELECT * FROM customers where PostalCode = 1010 or PostalCode = 3012 or PostalCode = 12209 or PostalCode = 05023;
+
+-- select * from orders where not shipregion = 'NULL';
+-- SELECT * FROM Customers ORDER BY Country, City; 
+
+-- INSERT INTO customers Values("Brent");
+-- UPDATE ORDERS SET SHIPREGION = 'EUROZONE' WHERE SHIPREGION = 'FRANCE';
+
+-- DELETE FROM ORDERDETAILS WHERE QUANTITY = 1;
+-- SELECT MIN(QUANTITY) FROM `ORDER DETAILS`;
+-- SELECT MAX(QUANTITY) FROM `ORDER DETAILS`;
+
+-- SELECT AVG(QUANTITY) FROM `ORDER DETAILS`;
+
+-- SELECT MIN(QUANTITY) FROM `ORDER DETAILS` GROUP BY ORDERID;
+
+-- SELECT MAX(QUANTITY) FROM `ORDER DETAILS` GROUP BY ORDERID;
+
+-- SELECT AVG(QUANTITY) FROM `ORDER DETAILS` GROUP BY ORDERID;
+
+-- SELECT CUSTOMERID FROM ORDERS WHERE ORDERID = 10290;
+
+--inner join
+ select * from customers join orders 
+left join
+ select * from customers left join orders 
+using (customerID);
+
+--right join 
+select * from customers right join order s
+using (customerID);
+
+-- SELECT * FROM EMPLOYEES WHERE REPORTSTO IS NULL;
+-- SELECT * FROM EMPLOYESS WHERE REPORTSTO = 2;
